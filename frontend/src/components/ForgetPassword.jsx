@@ -9,7 +9,7 @@ const ForgotPassword = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/auth/forgot-password", { email });
+      const response = await axios.post("https://password-reset-mrmp.onrender.com/auth/forgot-password", { email });
     //   These line for display success messages
       setMessage(response.data.message);
     } catch (error) {
