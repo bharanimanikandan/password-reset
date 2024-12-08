@@ -13,7 +13,7 @@ app.use(bodyParser.json()); // For parsing application/json data
 
 // Environment Variables
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/password-reset";
+const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://kskaranbharani2001:Bharani%402803@cluster0.jpyog.mongodb.net/password-reset";
 
 // Connect to MongoDB
 const connectDB = async () => {
