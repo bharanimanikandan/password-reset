@@ -8,7 +8,11 @@ const bcrypt = require("bcrypt");
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: 'https://pass-reset1.netlify.app', // Your frontend domain
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
+    credentials: true,
+}));
 app.use(bodyParser.json()); // For parsing application/json data
 
 // Environment Variables
